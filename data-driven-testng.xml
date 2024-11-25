@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="POM implementation">
+    <test name="Functional Tests on chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.LoginTest">
+                <methods>
+                    <include name="getMultipleDataFromExcel"/>
+<!--                    <include name="testingLoginWithMultipleData"/>-->
+<!--                    <include name="testingLoginWithSampleData"/>-->
+<!--                    <include name="testSampleLogin"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
